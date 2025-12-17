@@ -1,0 +1,64 @@
+h1
+{
+    color: white;
+}
+body
+{
+    background-color: #131720;
+}
+button
+{
+    margin-bottom: 7px;
+    background-color: white;
+    border: 0px;
+    cursor: pointer;
+}
+.menu_icon
+{
+    width: 23px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.menu_icon div
+{
+    width: 100%;
+    display: block;
+    height: 3px;
+    background: white;
+    margin: 4px 0;
+    box-sizing: border-box;
+}
+.menu_options
+{
+    display: none;
+}
+.menu_icon div {
+    transition: all 0.3s ease;
+}
+
+.menu_icon.active div:nth-child(1) 
+{
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu_icon.active div:nth-child(2) 
+{
+    opacity: 0;
+}
+
+.menu_icon.active div:nth-child(3) 
+{
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+#query
+{
+    margin-left:79%;
+    margin-top: -10%;
+}
+#thumbnail
+{
+    margin-top: 20px;
+    height:170px;
+    width:170px;
+}
